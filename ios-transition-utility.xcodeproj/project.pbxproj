@@ -13,6 +13,10 @@
 		D6BC23C1229E2C8700D754FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6BC23C0229E2C8700D754FE /* Assets.xcassets */; };
 		D6BC23C4229E2C8700D754FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6BC23C2229E2C8700D754FE /* LaunchScreen.storyboard */; };
 		D6BC23CF229E2C8800D754FE /* ios_transition_utilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC23CE229E2C8800D754FE /* ios_transition_utilityTests.swift */; };
+		D6BC23E0229E61AF00D754FE /* Transitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC23DF229E61AF00D754FE /* Transitable.swift */; };
+		D6BC23E2229E626D00D754FE /* TransitableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC23E1229E626D00D754FE /* TransitableView.swift */; };
+		D6BC23E5229E62FD00D754FE /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC23E4229E62FD00D754FE /* UIViewController+.swift */; };
+		D6BC23E7229E632700D754FE /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC23E6229E632700D754FE /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		D6BC23CA229E2C8800D754FE /* ios-transition-utilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-transition-utilityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6BC23CE229E2C8800D754FE /* ios_transition_utilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_transition_utilityTests.swift; sourceTree = "<group>"; };
 		D6BC23D0229E2C8800D754FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6BC23DF229E61AF00D754FE /* Transitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitable.swift; sourceTree = "<group>"; };
+		D6BC23E1229E626D00D754FE /* TransitableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitableView.swift; sourceTree = "<group>"; };
+		D6BC23E4229E62FD00D754FE /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		D6BC23E6229E632700D754FE /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,7 @@
 			children = (
 				D6BC23C0229E2C8700D754FE /* Assets.xcassets */,
 				D6BC23C5229E2C8800D754FE /* Info.plist */,
+				D6BC23E6229E632700D754FE /* Notification.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -125,6 +134,8 @@
 		D6BC23DC229E5E5200D754FE /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D6BC23E3229E62D300D754FE /* Extension */,
+				D6BC23DE229E619600D754FE /* Transition */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -134,6 +145,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D6BC23DE229E619600D754FE /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23DF229E61AF00D754FE /* Transitable.swift */,
+				D6BC23E1229E626D00D754FE /* TransitableView.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		D6BC23E3229E62D300D754FE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23E4229E62FD00D754FE /* UIViewController+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6BC23E2229E626D00D754FE /* TransitableView.swift in Sources */,
+				D6BC23E0229E61AF00D754FE /* Transitable.swift in Sources */,
+				D6BC23E7229E632700D754FE /* Notification.swift in Sources */,
+				D6BC23E5229E62FD00D754FE /* UIViewController+.swift in Sources */,
 				D6BC23BC229E2C8200D754FE /* ViewController.swift in Sources */,
 				D6BC23BA229E2C8200D754FE /* AppDelegate.swift in Sources */,
 			);
