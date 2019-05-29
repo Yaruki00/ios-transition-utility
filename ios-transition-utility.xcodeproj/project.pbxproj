@@ -77,12 +77,11 @@
 		D6BC23B8229E2C8200D754FE /* ios-transition-utility */ = {
 			isa = PBXGroup;
 			children = (
-				D6BC23B9229E2C8200D754FE /* AppDelegate.swift */,
-				D6BC23BB229E2C8200D754FE /* ViewController.swift */,
-				D6BC23BD229E2C8200D754FE /* Main.storyboard */,
-				D6BC23C0229E2C8700D754FE /* Assets.xcassets */,
-				D6BC23C2229E2C8700D754FE /* LaunchScreen.storyboard */,
-				D6BC23C5229E2C8800D754FE /* Info.plist */,
+				D6BC23D9229E5DC200D754FE /* Application */,
+				D6BC23DA229E5DD000D754FE /* Presentation */,
+				D6BC23DD229E5F4700D754FE /* Model */,
+				D6BC23DB229E5E1F00D754FE /* Resource */,
+				D6BC23DC229E5E5200D754FE /* Utility */,
 			);
 			path = "ios-transition-utility";
 			sourceTree = "<group>";
@@ -94,6 +93,47 @@
 				D6BC23D0229E2C8800D754FE /* Info.plist */,
 			);
 			path = "ios-transition-utilityTests";
+			sourceTree = "<group>";
+		};
+		D6BC23D9229E5DC200D754FE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23B9229E2C8200D754FE /* AppDelegate.swift */,
+				D6BC23C2229E2C8700D754FE /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D6BC23DA229E5DD000D754FE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23BD229E2C8200D754FE /* Main.storyboard */,
+				D6BC23BB229E2C8200D754FE /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		D6BC23DB229E5E1F00D754FE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23C0229E2C8700D754FE /* Assets.xcassets */,
+				D6BC23C5229E2C8800D754FE /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D6BC23DC229E5E5200D754FE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D6BC23DD229E5F4700D754FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5EF57U232;
-				INFOPLIST_FILE = "ios-transition-utility/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-transition-utility/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5EF57U232;
-				INFOPLIST_FILE = "ios-transition-utility/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-transition-utility/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
