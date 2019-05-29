@@ -17,6 +17,7 @@
 		D6BC23E2229E626D00D754FE /* TransitableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC23E1229E626D00D754FE /* TransitableView.swift */; };
 		D6BC23E5229E62FD00D754FE /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC23E4229E62FD00D754FE /* UIViewController+.swift */; };
 		D6BC23E7229E632700D754FE /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC23E6229E632700D754FE /* Notification.swift */; };
+		D6BC23EA229E643F00D754FE /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC23E9229E643F00D754FE /* Transitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D6BC23E1229E626D00D754FE /* TransitableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitableView.swift; sourceTree = "<group>"; };
 		D6BC23E4229E62FD00D754FE /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		D6BC23E6229E632700D754FE /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		D6BC23E9229E643F00D754FE /* Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,11 @@
 		D6BC23DA229E5DD000D754FE /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D6BC23ED229E65A600D754FE /* Splash */,
+				D6BC23F0229E65D200D754FE /* Tab */,
+				D6BC23F1229E65F800D754FE /* A */,
+				D6BC23F2229E660800D754FE /* B */,
+				D6BC23F3229E661300D754FE /* C */,
 				D6BC23BD229E2C8200D754FE /* Main.storyboard */,
 				D6BC23BB229E2C8200D754FE /* ViewController.swift */,
 			);
@@ -143,6 +150,7 @@
 		D6BC23DD229E5F4700D754FE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D6BC23E8229E642100D754FE /* Transition */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -162,6 +170,129 @@
 				D6BC23E4229E62FD00D754FE /* UIViewController+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		D6BC23E8229E642100D754FE /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23E9229E643F00D754FE /* Transitions.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		D6BC23ED229E65A600D754FE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23EF229E65C400D754FE /* View */,
+				D6BC23EE229E65C100D754FE /* Presenter */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		D6BC23EE229E65C100D754FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D6BC23EF229E65C400D754FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6BC23F0229E65D200D754FE /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23F5229E663E00D754FE /* View */,
+				D6BC23F4229E663600D754FE /* Presenter */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		D6BC23F1229E65F800D754FE /* A */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23F7229E666300D754FE /* View */,
+				D6BC23F6229E665C00D754FE /* Presenter */,
+			);
+			path = A;
+			sourceTree = "<group>";
+		};
+		D6BC23F2229E660800D754FE /* B */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23F9229E667300D754FE /* View */,
+				D6BC23F8229E666C00D754FE /* Presenter */,
+			);
+			path = B;
+			sourceTree = "<group>";
+		};
+		D6BC23F3229E661300D754FE /* C */ = {
+			isa = PBXGroup;
+			children = (
+				D6BC23FB229E669700D754FE /* View */,
+				D6BC23FA229E668E00D754FE /* Presenter */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		D6BC23F4229E663600D754FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D6BC23F5229E663E00D754FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6BC23F6229E665C00D754FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D6BC23F7229E666300D754FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6BC23F8229E666C00D754FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D6BC23F9229E667300D754FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6BC23FA229E668E00D754FE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D6BC23FB229E669700D754FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +400,7 @@
 				D6BC23E0229E61AF00D754FE /* Transitable.swift in Sources */,
 				D6BC23E7229E632700D754FE /* Notification.swift in Sources */,
 				D6BC23E5229E62FD00D754FE /* UIViewController+.swift in Sources */,
+				D6BC23EA229E643F00D754FE /* Transitions.swift in Sources */,
 				D6BC23BC229E2C8200D754FE /* ViewController.swift in Sources */,
 				D6BC23BA229E2C8200D754FE /* AppDelegate.swift in Sources */,
 			);
