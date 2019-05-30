@@ -32,7 +32,7 @@ protocol TransitionDependencies {}
 struct EmptyTransitionDependencies: TransitionDependencies {}
 
 protocol TransitionDependenciesAcceptable {
-    func setDepencies<T: TransitionDependencies>(depencies: T)
+    func setDependencies<T: TransitionDependencies>(dependencies: T)
 }
 
 typealias TransitionDependenciesAcceptableViewController = UIViewController & TransitionDependenciesAcceptable

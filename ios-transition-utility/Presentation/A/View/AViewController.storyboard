@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gut-kn-Rzi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--A-->
+        <scene sceneID="LoZ-kX-prL">
+            <objects>
+                <viewController title="A" id="Gut-kn-Rzi" customClass="AViewController" customModule="ios_transition_utility" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wel-eb-vH5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHX-Rq-lSr">
+                                <rect key="frame" x="180.5" y="155" width="14.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-e6-xH8">
+                                <rect key="frame" x="142" y="280.5" width="91" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8f-CD-PpW">
+                                        <rect key="frame" x="0.0" y="0.0" width="91" height="30"/>
+                                        <state key="normal" title="swicth with B"/>
+                                        <connections>
+                                            <action selector="switchWithBDidTap" destination="Gut-kn-Rzi" eventType="touchUpInside" id="n1a-Uu-2Jf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mJ-w0-R8v">
+                                        <rect key="frame" x="12" y="38" width="67" height="30"/>
+                                        <state key="normal" title="present C"/>
+                                        <connections>
+                                            <action selector="presentCDidTap" destination="Gut-kn-Rzi" eventType="touchUpInside" id="3gd-wD-atI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gG-9m-MMV">
+                                        <rect key="frame" x="21" y="76" width="49" height="30"/>
+                                        <state key="normal" title="push C"/>
+                                        <connections>
+                                            <action selector="pushCDidTap" destination="Gut-kn-Rzi" eventType="touchUpInside" id="GGU-OS-tIM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gey-e6-xH8" firstAttribute="centerX" secondItem="Wel-eb-vH5" secondAttribute="centerX" id="1Br-hW-7HD"/>
+                            <constraint firstItem="QHX-Rq-lSr" firstAttribute="centerY" secondItem="Wel-eb-vH5" secondAttribute="centerY" multiplier="1:2" id="9Uz-RU-h0g"/>
+                            <constraint firstItem="Gey-e6-xH8" firstAttribute="centerY" secondItem="Wel-eb-vH5" secondAttribute="centerY" id="oUP-uP-gZp"/>
+                            <constraint firstItem="QHX-Rq-lSr" firstAttribute="centerX" secondItem="Wel-eb-vH5" secondAttribute="centerX" id="yUd-Si-ZOb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gCl-M6-d5Q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VDx-In-oBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="167" y="145"/>
+        </scene>
+    </scenes>
+</document>

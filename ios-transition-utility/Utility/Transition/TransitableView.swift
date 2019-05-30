@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-protocol TransitionView {
+protocol TransitableView {
     func transit<T: UIViewController, S: TransitionDependencies>(_ transitable: Transitable<T, S>)
 }
 
-extension TransitionView where Self: UIViewController {
+extension TransitableView where Self: UIViewController {
     
     func transit<T: UIViewController, S: TransitionDependencies>(_ transitable: Transitable<T, S>) {
         switch transitable.type {
@@ -41,7 +41,7 @@ extension TransitionView where Self: UIViewController {
             guard let acceptableVC = vc as? TransitionDependenciesAcceptableViewController else {
                 fatalError("\(vc) doesn't confirm TransitionDependenciesAcceptableViewController")
             }
-            acceptableVC.setDepencies(depencies: transitable.dependencies)
+            acceptableVC.setDependencies(dependencies: transitable.dependencies)
         }
         return transitable.withNavigationController ? UINavigationController(rootViewController: vc) : vc
     }
