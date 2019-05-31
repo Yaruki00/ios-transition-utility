@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// 画面Cで必要になるデータ
 struct CDependencies: TransitionDependencies {
     let text: String
     let isPresented: Bool
@@ -19,6 +20,7 @@ extension Transitions {
     
     typealias ToC = Transitable<CViewController, CDependencies>
     
+    // 画面Cにpresentで遷移
     static func presentC(text: String) -> ToC {
         return Transitable<CViewController, CDependencies>(
             vcType: CViewController.self,
@@ -27,6 +29,7 @@ extension Transitions {
         )
     }
     
+    // 画面Cにpushで遷移
     static func pushC(text: String) -> ToC {
         return Transitable<CViewController, CDependencies>(
             vcType: CViewController.self,
